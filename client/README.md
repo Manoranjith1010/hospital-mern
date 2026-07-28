@@ -1,8 +1,8 @@
-# Frontend Documentation
+# Client Documentation
 
-## Hospital Management System - Frontend
+## Hospital Management System - Client
 
-React-based frontend for the Hospital Management System with Redux state management and Tailwind CSS styling.
+React-based client for the Hospital Management System with Redux state management and Tailwind CSS styling.
 
 ### Features
 
