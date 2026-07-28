@@ -151,19 +151,19 @@ This document summarizes the complete Hospital Management System MERN applicatio
 ## 🐳 DOCKER & INFRASTRUCTURE
 
 ### Docker Configuration
-✅ **backend/Dockerfile** - Multi-stage build for Node.js backend
+✅ **server/Dockerfile** - Multi-stage build for Node.js backend
   - Build stage with dependencies
   - Production stage with dumb-init
   - Health checks
   - Proper signal handling
 
-✅ **frontend/Dockerfile** - Multi-stage build for React + Nginx
+✅ **client/Dockerfile** - Multi-stage build for React + Nginx
   - Build stage with npm
   - Production stage with Nginx
   - Optimized assets serving
 
 ### Nginx Configuration
-✅ **frontend/nginx.conf** - SPA routing, API proxy, security headers, caching
+✅ **client/nginx.conf** - SPA routing, API proxy, security headers, caching
 
 ### Docker Compose
 ✅ **docker-compose.yml** - Complete orchestration:
@@ -177,8 +177,8 @@ This document summarizes the complete Hospital Management System MERN applicatio
 
 ### Git Configuration
 ✅ **.gitignore** - Root level gitignore
-✅ **backend/.gitignore** - Backend specific
-✅ **frontend/.gitignore** - Frontend specific
+✅ **server/.gitignore** - Backend specific
+✅ **client/.gitignore** - Frontend specific
 
 ---
 
@@ -362,14 +362,14 @@ docker-compose up -d
 
 **Backend:**
 ```bash
-cd backend
+cd server
 npm install
 npm run dev  # Requires MongoDB running
 ```
 
 **Frontend:**
 ```bash
-cd frontend
+cd client
 npm install
 npm run dev  # Runs on http://localhost:3000
 ```

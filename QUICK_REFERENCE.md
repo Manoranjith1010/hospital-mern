@@ -20,10 +20,10 @@ Then access:
 ### Backend Core Files
 | File | Purpose |
 |------|---------|
-| `backend/server.js` | Express server entry point |
-| `backend/app.js` | Express app setup & middleware |
-| `backend/config/db.js` | MongoDB connection |
-| `backend/routes/index.js` | Main router (aggregates all routes) |
+| `server/server.js` | Express server entry point |
+| `server/app.js` | Express app setup & middleware |
+| `server/config/db.js` | MongoDB connection |
+| `server/routes/index.js` | Main router (aggregates all routes) |
 
 ### Backend Models (Database Schemas)
 | Model | File | Purpose |
@@ -57,10 +57,10 @@ Then access:
 ### Frontend Key Files
 | File | Purpose |
 |------|---------|
-| `frontend/src/App.jsx` | Root component with providers |
-| `frontend/src/main.jsx` | React entry point |
-| `frontend/vite.config.js` | Build configuration |
-| `frontend/src/api/client.js` | Axios instance with interceptors |
+| `client/src/App.jsx` | Root component with providers |
+| `client/src/main.jsx` | React entry point |
+| `client/vite.config.js` | Build configuration |
+| `client/src/api/client.js` | Axios instance with interceptors |
 
 ### Frontend Redux (State Management)
 | Slice | File | State |
@@ -185,7 +185,7 @@ curl -X POST http://localhost:5000/api/appointments \
 
 ## 🎯 IMPORTANT ENVIRONMENT VARIABLES
 
-### Backend (.env in backend/ directory)
+### Backend (.env in server/ directory)
 ```env
 # Required
 PORT=5000
@@ -200,7 +200,7 @@ SMTP_HOST=smtp.gmail.com
 SMTP_PORT=587
 ```
 
-### Frontend (.env in frontend/ directory)
+### Frontend (.env in client/ directory)
 ```env
 VITE_API_BASE_URL=http://localhost:5000/api
 ```
@@ -300,8 +300,8 @@ docker-compose up -d --build
 
 ## 📚 ADDITIONAL RESOURCES
 
-- Backend README: `backend/README.md`
-- Frontend README: `frontend/README.md`
+- Backend README: `server/README.md`
+- Frontend README: `client/README.md`
 - Full Summary: `BUILD_SUMMARY.md`
 - Docker Compose Config: `docker-compose.yml`
 

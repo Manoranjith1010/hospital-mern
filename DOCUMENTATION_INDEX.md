@@ -32,14 +32,14 @@
 - What was delivered
 
 ### 🔧 Backend developers
-👉 **Read**: [backend/README.md](backend/README.md)
+👉 **Read**: [server/README.md](server/README.md)
 - Backend setup
 - Service layer documentation
 - API endpoints
 - Running locally
 
 ### 🎨 Frontend developers
-👉 **Read**: [frontend/README.md](frontend/README.md)
+👉 **Read**: [client/README.md](client/README.md)
 - Frontend setup
 - Component structure
 - State management
@@ -60,16 +60,16 @@
 | Document | For | Time |
 |----------|-----|------|
 | [PROJECT_COMPLETION_REPORT.md](PROJECT_COMPLETION_REPORT.md) | Managers/Project Leads | 10-15 min |
-| [backend/README.md](backend/README.md) | Backend Developers | 15-20 min |
-| [frontend/README.md](frontend/README.md) | Frontend Developers | 15-20 min |
+| [server/README.md](server/README.md) | Backend Developers | 15-20 min |
+| [client/README.md](client/README.md) | Frontend Developers | 15-20 min |
 
 ### Configuration Reference
 | Topic | Location |
 |-------|----------|
-| Backend environment | `backend/.env.example` |
-| Frontend environment | `frontend/.env.example` |
+| Backend environment | `server/.env.example` |
+| Frontend environment | `client/.env.example` |
 | Docker setup | `docker-compose.yml` |
-| Nginx config | `frontend/nginx.conf` |
+| Nginx config | `client/nginx.conf` |
 
 ---
 
@@ -88,14 +88,14 @@
 3. Read: [PROJECT_COMPLETION_REPORT.md](PROJECT_COMPLETION_REPORT.md) - Statistics
 
 #### ...set up for local development
-1. Read: [backend/README.md](backend/README.md) - Backend setup
-2. Read: [frontend/README.md](frontend/README.md) - Frontend setup
+1. Read: [server/README.md](server/README.md) - Backend setup
+2. Read: [client/README.md](client/README.md) - Frontend setup
 3. Follow: Step-by-step instructions in each
 
 #### ...understand the architecture
 1. Read: [README.md](README.md) - Project Structure
 2. Read: [BUILD_SUMMARY.md](BUILD_SUMMARY.md) - Architecture Breakdown
-3. Explore: Code in backend/ and frontend/ directories
+3. Explore: Code in server/ and client/ directories
 
 #### ...deploy to production
 1. Read: [README.md](README.md) - Production Checklist
@@ -105,7 +105,7 @@
 #### ...troubleshoot an issue
 1. Check: [QUICK_REFERENCE.md](QUICK_REFERENCE.md) - Common Fixes
 2. Check: Docker logs - `docker-compose logs -f`
-3. Read: Appropriate README (backend/frontend)
+3. Read: Appropriate README (server/client)
 
 #### ...understand the API
 1. Read: [README.md](README.md) - API Documentation section
@@ -126,7 +126,7 @@
 | **Total Documents** | 6 files |
 | **Quick Ref** | 1 file (QUICK_REFERENCE.md) |
 | **Main Docs** | 3 files (README.md, BUILD_SUMMARY.md, PROJECT_COMPLETION_REPORT.md) |
-| **Module Docs** | 2 files (backend/README.md, frontend/README.md) |
+| **Module Docs** | 2 files (server/README.md, client/README.md) |
 | **Total Pages** | ~80-100 pages of content |
 | **Estimated Read Time** | 1-2 hours for complete understanding |
 
@@ -140,9 +140,9 @@ hospital-mern/
 ├── README.md                  ← START HERE for overview
 ├── BUILD_SUMMARY.md           ← Technical deep dive
 ├── PROJECT_COMPLETION_REPORT.md ← Status & validation
-├── backend/
+├── server/
 │   └── README.md              ← Backend documentation
-├── frontend/
+├── client/
 │   └── README.md              ← Frontend documentation
 └── docker-compose.yml         ← Infrastructure config
 ```
@@ -162,15 +162,15 @@ hospital-mern/
 1. [QUICK_REFERENCE.md](QUICK_REFERENCE.md) - Commands
 2. [README.md](README.md) - Docker section
 3. `docker-compose.yml` - Configuration
-4. `frontend/nginx.conf` - Nginx setup
+4. `client/nginx.conf` - Nginx setup
 
 **Backend Developer**
-1. [backend/README.md](backend/README.md) - Setup & Structure
+1. [server/README.md](server/README.md) - Setup & Structure
 2. [BUILD_SUMMARY.md](BUILD_SUMMARY.md) - API endpoints
 3. Source code with JSDoc comments
 
 **Frontend Developer**
-1. [frontend/README.md](frontend/README.md) - Setup & Structure
+1. [client/README.md](client/README.md) - Setup & Structure
 2. [README.md](README.md) - Frontend section
 3. Source code with JSDoc comments
 
@@ -181,8 +181,8 @@ hospital-mern/
 
 **Full Stack Developer**
 1. [README.md](README.md) - Complete overview
-2. [backend/README.md](backend/README.md) - Backend details
-3. [frontend/README.md](frontend/README.md) - Frontend details
+2. [server/README.md](server/README.md) - Backend details
+3. [client/README.md](client/README.md) - Frontend details
 4. [BUILD_SUMMARY.md](BUILD_SUMMARY.md) - Architecture
 
 ---
@@ -232,14 +232,14 @@ hospital-mern/
 - ✅ Deployment readiness
 - ✅ Final project statistics
 
-### backend/README.md
+### server/README.md
 - ✅ Backend setup
 - ✅ Project structure
 - ✅ Running locally
 - ✅ API endpoints
 - ✅ Configuration
 
-### frontend/README.md
+### client/README.md
 - ✅ Frontend setup
 - ✅ Project structure
 - ✅ Running locally
@@ -253,7 +253,7 @@ hospital-mern/
 | Audience | Time | Recommended Reading Path |
 |----------|------|--------------------------|
 | **Impatient** | 5 min | QUICK_REFERENCE.md → Start project |
-| **Developer** | 30 min | README.md + backend/README.md OR frontend/README.md |
+| **Developer** | 30 min | README.md + server/README.md OR client/README.md |
 | **Full Stack** | 60 min | README.md + BUILD_SUMMARY.md + both README files |
 | **Project Lead** | 20 min | PROJECT_COMPLETION_REPORT.md + README.md |
 | **DevOps** | 15 min | QUICK_REFERENCE.md + README.md Docker section |
@@ -279,10 +279,10 @@ START HERE?
     │   └─→ PROJECT_COMPLETION_REPORT.md (15 min)
     │
     ├─→ I'm a backend dev
-    │   └─→ backend/README.md + BUILD_SUMMARY.md
+    │   └─→ server/README.md + BUILD_SUMMARY.md
     │
     └─→ I'm a frontend dev
-        └─→ frontend/README.md + README.md
+        └─→ client/README.md + README.md
 ```
 
 ---
@@ -295,13 +295,13 @@ START HERE?
 
 ### Project Structure
 - **High Level**: [README.md - Project Structure](README.md#-project-structure)
-- **Backend Detail**: [backend/README.md - Structure](backend/README.md#-backend-structure)
-- **Frontend Detail**: [frontend/README.md - Structure](frontend/README.md#-frontend-structure)
+- **Backend Detail**: [server/README.md - Structure](server/README.md#-backend-structure)
+- **Frontend Detail**: [client/README.md - Structure](client/README.md#-frontend-structure)
 
 ### Setup Instructions
 - **Quick Start**: [QUICK_REFERENCE.md - Quick Start](QUICK_REFERENCE.md#-quick-start-copy--paste)
 - **Detailed Setup**: [README.md - Quick Start](README.md#-quick-start)
-- **Local Development**: [backend/README.md](backend/README.md) + [frontend/README.md](frontend/README.md)
+- **Local Development**: [server/README.md](server/README.md) + [client/README.md](client/README.md)
 
 ### Troubleshooting
 - **Quick Fixes**: [QUICK_REFERENCE.md - Troubleshooting](QUICK_REFERENCE.md#-troubleshooting-quick-fixes)
@@ -352,8 +352,8 @@ START HERE?
 - ✅ README.md - Main documentation
 - ✅ BUILD_SUMMARY.md - Technical breakdown
 - ✅ PROJECT_COMPLETION_REPORT.md - Status report
-- ✅ backend/README.md - Backend docs
-- ✅ frontend/README.md - Frontend docs
+- ✅ server/README.md - Backend docs
+- ✅ client/README.md - Frontend docs
 
 ---
 

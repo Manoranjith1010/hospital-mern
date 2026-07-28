@@ -78,7 +78,7 @@
 
 ### Backend Directory Structure (40 files)
 ```
-backend/
+server/
 ├── config/
 │   ├── db.js                 ✅ MongoDB connection
 │   └── env.js                ✅ Environment configuration
@@ -132,7 +132,7 @@ backend/
 
 ### Frontend Directory Structure (34 files)
 ```
-frontend/
+client/
 ├── src/
 │   ├── api/
 │   │   ├── client.js         ✅ Axios instance
@@ -198,7 +198,7 @@ hospital-mern/
 ├── README.md                 ✅ Main documentation
 ├── BUILD_SUMMARY.md          ✅ Detailed build summary
 ├── QUICK_REFERENCE.md        ✅ Quick start guide
-└── backend/.gitignore        ✅ Git ignore (backend)
+└── server/.gitignore        ✅ Git ignore (backend)
 ```
 
 ---
@@ -317,7 +317,7 @@ hospital-mern/
 - Troubleshooting quick fixes
 - Production checklist
 
-### 4. backend/README.md (Backend Docs)
+### 4. server/README.md (Backend Docs)
 - Backend setup instructions
 - Project structure
 - API endpoints documentation
@@ -325,7 +325,7 @@ hospital-mern/
 - Running locally vs Docker
 - Testing setup
 
-### 5. frontend/README.md (Frontend Docs)
+### 5. client/README.md (Frontend Docs)
 - Frontend setup instructions
 - Project structure
 - Features and functionality
@@ -517,8 +517,8 @@ hospital-mern/
    - READ: `README.md` - Start here
    - READ: `QUICK_REFERENCE.md` - Quick lookup
    - READ: `BUILD_SUMMARY.md` - Detailed info
-   - READ: `backend/README.md` - Backend details
-   - READ: `frontend/README.md` - Frontend details
+   - READ: `server/README.md` - Backend details
+   - READ: `client/README.md` - Frontend details
 
 2. **Troubleshooting**
    - Check `QUICK_REFERENCE.md` troubleshooting section

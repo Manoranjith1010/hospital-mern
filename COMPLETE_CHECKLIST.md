@@ -177,8 +177,8 @@
 - ✅ BUILD_SUMMARY.md
 - ✅ PROJECT_COMPLETION_REPORT.md
 - ✅ DOCUMENTATION_INDEX.md
-- ✅ backend/README.md
-- ✅ frontend/README.md
+- ✅ server/README.md
+- ✅ client/README.md
 - ✅ API documentation
 - ✅ Setup instructions
 - ✅ Troubleshooting guides
