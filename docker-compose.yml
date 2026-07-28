@@ -25,7 +25,7 @@ services:
   # Backend API Service
   backend:
     build:
-      context: ./backend
+      context: ./server
       dockerfile: Dockerfile
     container_name: hospital-backend
     environment:
@@ -47,7 +47,7 @@ services:
       mongodb:
         condition: service_healthy
     volumes:
-      - ./backend/logs:/app/logs
+      - ./server/logs:/app/logs
     networks:
       - hospital_network
     healthcheck:
@@ -61,7 +61,7 @@ services:
   # Frontend Service
   frontend:
     build:
-      context: ./frontend
+      context: ./client
       dockerfile: Dockerfile
     container_name: hospital-frontend
     ports:
