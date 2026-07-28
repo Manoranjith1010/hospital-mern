@@ -1,7 +1,7 @@
 {
-  "name": "hospital-management-backend",
+  "name": "hospital-management-server",
   "version": "1.0.0",
-  "description": "Hospital Management System Backend",
+  "description": "Hospital Management System Server",
   "main": "server.js",
   "type": "module",
   "scripts": {

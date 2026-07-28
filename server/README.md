@@ -1,6 +1,6 @@
-# Hospital Management System - Backend
+# Hospital Management System - Server
 
-This is the backend server for the Hospital Management System built with Node.js and Express.
+This is the server application for the Hospital Management System built with Node.js and Express.
 
 ## Features
 
@@ -22,7 +22,7 @@ npm install
 
 ## Environment Variables
 
-Create a `.env` file in the backend directory with the required variables (see `.env` template).
+Create a `.env` file in the server directory with the required variables (see `.env` template).
 
 ## Running the Server
 
@@ -82,7 +82,7 @@ npm start
 ## Structure
 
 ```
-backend/
+server/
 ├── config/          # Configuration files
 ├── controllers/     # Route handlers
 ├── models/          # Database models
