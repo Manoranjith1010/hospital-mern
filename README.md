@@ -76,7 +76,7 @@ A production-ready Hospital Management System built with the MERN stack (MongoDB
 
 ```
 hospital-mern/
-├── backend/
+├── server/
 │   ├── config/              # Database & environment config
 │   ├── controllers/         # Route request handlers (5 files)
 │   ├── models/              # MongoDB schemas (7 files)
@@ -91,7 +91,7 @@ hospital-mern/
 │   ├── Dockerfile
 │   └── package.json
 │
-├── frontend/
+├── client/
 │   ├── src/
 │   │   ├── api/             # API client & services
 │   │   ├── components/      # Reusable UI components (7 files)
@@ -143,7 +143,7 @@ docker-compose logs -f
 
 **Backend Setup**:
 ```bash
-cd backend
+cd server
 npm install
 cp .env.example .env        # Edit .env with your config
 npm run dev                 # Requires MongoDB running locally
@@ -151,7 +151,7 @@ npm run dev                 # Requires MongoDB running locally
 
 **Frontend Setup**:
 ```bash
-cd frontend
+cd client
 npm install
 cp .env.example .env        # Update API URL if needed
 npm run dev                 # Runs on http://localhost:3000
@@ -343,11 +343,11 @@ docker-compose exec frontend sh
 
 ```bash
 # Backend tests
-cd backend
+cd server
 npm test
 
 # Frontend tests
-cd frontend
+cd client
 npm test
 
 # With coverage
@@ -413,17 +413,17 @@ lsof -ti:3000 | xargs kill -9
 
 ### Frontend Can't Connect to Backend
 ```bash
-# Verify VITE_API_BASE_URL in frontend/.env
+# Verify VITE_API_BASE_URL in client/.env
 # Check backend is running: curl http://localhost:5000/health
-# Check CORS_ORIGIN in backend/.env
+# Check CORS_ORIGIN in server/.env
 ```
 
 ## 📞 Support
 
 For issues, questions, or contributions:
 1. Check [BUILD_SUMMARY.md](BUILD_SUMMARY.md) for detailed information
-2. Review [backend/README.md](backend/README.md) for backend docs
-3. Review [frontend/README.md](frontend/README.md) for frontend docs
+2. Review [server/README.md](server/README.md) for backend docs
+3. Review [client/README.md](client/README.md) for frontend docs
 4. Create an issue or submit a pull request
 
 ## 📄 License

@@ -177,7 +177,7 @@ docker-compose.yml              - Service orchestration (MongoDB, Backend, Front
 
 Nginx
 ─────────────────
-frontend/nginx.conf             - Reverse proxy & SPA routing configuration
+client/nginx.conf             - Reverse proxy & SPA routing configuration
 
 
 SUMMARY STATISTICS
@@ -208,24 +208,24 @@ QUICK FILE REFERENCE
 ═══════════════════════════════════════════════════════════════════════════════
 
 Main Entry Points:
-  Backend:  backend/server.js
-  Frontend: frontend/src/main.jsx
+  Backend:  server/server.js
+  Frontend: client/src/main.jsx
   Config:   docker-compose.yml
 
 Key Configuration:
-  Backend Config:     backend/config/env.js
-  Database Connection: backend/config/db.js
-  API Client:         frontend/src/api/client.js
-  Redux Store:        frontend/src/features/store.js
+  Backend Config:     server/config/env.js
+  Database Connection: server/config/db.js
+  API Client:         client/src/api/client.js
+  Redux Store:        client/src/features/store.js
 
 Authentication:
-  Backend Auth:       backend/middleware/auth.js
-  Frontend Auth:      frontend/src/features/auth/authSlice.js
-  Frontend Hook:      frontend/src/hooks/useAuth.js
+  Backend Auth:       server/middleware/auth.js
+  Frontend Auth:      client/src/features/auth/authSlice.js
+  Frontend Hook:      client/src/hooks/useAuth.js
 
 API Services:
-  Backend Services:   backend/services/ (5 files)
-  Frontend Services:  frontend/src/api/services.js
+  Backend Services:   server/services/ (5 files)
+  Frontend Services:  client/src/api/services.js
 
 Documentation:
   Quick Start:        QUICK_REFERENCE.md
